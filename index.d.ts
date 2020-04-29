@@ -100,6 +100,7 @@ declare module '@shopify/draggable' {
 
     interface DraggableOptions {
         draggable?: string;
+        distance?: number; /* The distance you want the pointer to have moved before drag starts. Default: 0 */
         handle?: string | NodeList | HTMLElement[] | HTMLElement | ((currentElement: HTMLElement) => HTMLElement);
         delay?: number;
         plugins?: Array<typeof AbstractPlugin>;
